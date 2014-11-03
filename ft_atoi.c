@@ -10,9 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-
 /*
 ** Discards any whitespace characters until first non-whitespace character is
 ** found. Then takes as many characters as possible to form a valid integer
@@ -42,11 +39,4 @@ int	ft_atoi(const char *str)
 		str++;
 	}
 	return (value * sign);
-}
-
-int	main(void)
-{
-	printf("%i\n", atoi(" -123junk"));
-	printf("%i\n", ft_atoi(" -123junk"));
-	return (0);
 }
