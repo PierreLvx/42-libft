@@ -1,20 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 15:07:53 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/03 15:43:48 by plavaux          ###   ########.fr       */
+/*   Created: 2014/11/03 15:40:42 by plavaux           #+#    #+#             */
+/*   Updated: 2014/11/03 15:44:34 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Prints the character c on standard output.
-*/
-
-void	ft_putchar(char c)
+void ft_putchar_fd(char c, int fd)
 {
-	write(1, &c, 1);
+	write(fd, &c, 1);
 }
