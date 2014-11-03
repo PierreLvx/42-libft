@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 15:07:53 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/03 15:43:48 by plavaux          ###   ########.fr       */
+/*   Created: 2014/11/03 15:11:31 by plavaux           #+#    #+#             */
+/*   Updated: 2014/11/03 15:48:46 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 /*
-** Prints the character c on standard output.
+** Prints the string s on the specified file descriptor
 */
 
-void	ft_putchar(char c)
+void	ft_putstr_fd(char const *s, int fd)
 {
-	write(1, &c, 1);
+	int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		ft_putchar_fd(s[i], fd);
+		i++;
+	}
 }
