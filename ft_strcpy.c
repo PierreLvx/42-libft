@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Pierre <Pierre@student.42.fr>              +#+  +:+       +#+        */
+/*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 22:51:36 by Pierre            #+#    #+#             */
-/*   Updated: 2014/11/03 23:47:48 by Pierre           ###   ########.fr       */
+/*   Created: 2014/11/04 13:29:47 by plavaux           #+#    #+#             */
+/*   Updated: 2014/11/04 13:29:54 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ char *strcpy(char *dst, const char *src)
 		i++;
 	}
 	dst[i] = '\0';
-	return (dst)
+	return (dst);
 }
