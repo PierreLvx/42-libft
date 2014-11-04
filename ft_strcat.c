@@ -16,7 +16,7 @@
 ** The string s1 must have sufficient space to hold the result.
 */
 
-char *strcat(char *s1, char *s2)
+char *ft_strcat(char *s1, char *s2)
 {
 	int len;
 	int i;

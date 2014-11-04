@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 13:29:47 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/04 13:29:54 by plavaux          ###   ########.fr       */
+/*   Created: 2014/11/04 16:38:00 by plavaux           #+#    #+#             */
+/*   Updated: 2014/11/04 16:43:31 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Copies the string src to dst (including the terminating `\0' character).
+** Locates the 1st occurrence of c (converted to an unsigned char) in string s.
 */
 
-char *ft_strcpy(char *dst, const char *src)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int i;
+	size_t	i;
 
 	i = 0;
-	while (src[i] != '\0')
+	while (i < n)
 	{
-		dst[i] = src[i];
+		if (((unsigned char *)s)[i] == (unsigned char)c)
+			return (&((unsigned char *)s)[i]);
 		i++;
 	}
-	dst[i] = '\0';
-	return (dst);
+	return (NULL);
 }
