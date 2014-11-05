@@ -18,6 +18,6 @@
 
 void	ft_putchar(char c)
 {
-	if (c != NULL)
+	if (c != '\0')
 		write(1, &c, 1);
 }

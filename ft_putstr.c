@@ -21,7 +21,7 @@ void	ft_putstr(char const *s)
 	int	i;
 
 	i = 0;
-	if (s != NULL)
+	if (s != '\0')
 		while (s[i])
 		{
 			ft_putchar(s[i]);
