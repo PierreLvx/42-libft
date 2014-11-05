@@ -6,7 +6,7 @@
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 15:11:31 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/03 15:15:31 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/05 15:50:34 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_putstr(char const *s)
 	int	i;
 
 	i = 0;
-	if(s != NULL)
+	if (s != NULL)
 		while (s[i])
 		{
 			ft_putchar(s[i]);
