@@ -23,14 +23,17 @@ all: $(NAME)
 
 $(NAME):
 	$(CC) $(CFLAGS) -c $(SRC)
-#	ar rc $(NAME)
-#	ranlib $(NAME)
+	ar rc $(NAME) $(OBJ)
+	@ranlib $(NAME)
+	@echo "\033[32mBuilt library.\033[0m"
 
 clean:
 	@/bin/rm -f $(OBJ)
-	@echo "Cleaned up object files."
+	@echo "\033[32mCleaned up object files.\033[0m"
 
 fclean: clean
+	@/bin/rm $(NAME)
+	@echo "\033[32mCleaned up compiled files.\033[0m"
 
 re: fclean all
 
