@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
 /*
 ** Locates the 1st occurrence of c (converted to an unsigned char) in string s.

@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /*
 ** The islower() function tests for any lower-case letters.  The value of the
 ** argument must be representable as an unsigned char or the value of EOF.

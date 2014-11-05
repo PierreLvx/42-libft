@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /*
 ** Applies the function f to each character of the parameter string.
 ** Each character is passed by address to the function.

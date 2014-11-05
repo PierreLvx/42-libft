@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /*
 ** The isupper() function tests for any upper-case letter. The value of the
 ** argument must be representable as an unsigned char or the value of EOF.

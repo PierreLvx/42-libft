@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /*
 ** The strstr() function locates the first occurrence of
 ** the null-terminated string s2 in the null-terminated string s1.

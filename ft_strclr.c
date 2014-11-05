@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /*
 ** Clears a string by assigning '\0' to all the characters of parameter string.
 */
