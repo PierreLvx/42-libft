@@ -27,7 +27,8 @@ $(NAME):
 #	ranlib $(NAME)
 
 clean:
-	/bin/rm -f $(OBJ)
+	@/bin/rm -f $(OBJ)
+	@echo "Cleaned up object files."
 
 fclean: clean
 
