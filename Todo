@@ -1,0 +1,23 @@
+TODO
+
+	memcpy
+	memmove
+
+	strdup
+	strncpy
+
+	strncat
+	strlcat
+	strchr
+	strrchr
+	strnstr
+
+	ft_memalloc
+	ft_strnew
+	ft_strmap
+	ft_strmapi
+	ft_strsub
+	ft_strjoin
+	ft_strtrim
+	ft_strsplit
+	ft_itoa
