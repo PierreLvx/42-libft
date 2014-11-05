@@ -6,7 +6,7 @@
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 13:38:41 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/05 14:05:56 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/05 15:19:12 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,13 @@ char *ft_strstr(const char *s1, const char *s2)
 	while (s2[len] != '\0')
 		len++;
 	if (len == 0)
-		return (s1);
+		return ((char *)s1);
 	while (s1[i])
 	{
 		while (s2[pos] == s1[i + pos])
 		{
 			if (pos == len - 1)
-				return (s1 + i);
+				return ((char *)s1 + i);
 			pos++;
 		}
 		pos = 0;
