@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /*
 ** Appends a copy of the null-terminated string s2 to the end of the
 ** null-terminated string s1, then add a terminating '\0'.

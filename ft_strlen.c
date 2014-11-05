@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /*
 ** Computes the length of the string s, and returns the number of
 ** characters that precede the terminating NUL character.

@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 /*
 ** Compares at most n characters of two null-terminated byte strings.
 ** The comparison is done lexicographically.
