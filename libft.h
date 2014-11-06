@@ -6,7 +6,7 @@
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:40:29 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/05 10:28:21 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/06 14:35:16 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,11 @@ int		ft_isdigit(int c);
 int		ft_islower(int c);
 int		ft_isprint(int c);
 int		ft_isupper(int c);
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	ft_memdel(void **ap);
+void	*ft_memmove(void *dst, void *src, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_putchar(char c);
 void	ft_putchar_fd(char c, int fd);
