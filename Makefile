@@ -6,7 +6,7 @@
 #    By: plavaux <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/05 11:13:35 by plavaux           #+#    #+#              #
-#    Updated: 2014/11/05 11:25:54 by plavaux          ###   ########.fr        #
+#    Updated: 2014/11/06 15:58:08 by plavaux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,16 +14,16 @@ NAME = libft.a
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-# TODO: Wildcards are not allowed.
-# Do something cleaner before delivering the project.
-SRC = *.c
-OBJ = *.o
+SRC = 
+
+# No Wildcards? Let's use a macro.
+OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME):
-	$(CC) $(CFLAGS) -c $(SRC)
-	ar rc $(NAME) $(OBJ)
+	@$(CC) $(CFLAGS) -c $(SRC)
+	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
 	@echo "\033[32mBuilt library.\033[0m"
 
