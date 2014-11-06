@@ -6,7 +6,7 @@
 #    By: plavaux <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/05 11:13:35 by plavaux           #+#    #+#              #
-#    Updated: 2014/11/06 15:58:08 by plavaux          ###   ########.fr        #
+#    Updated: 2014/11/06 16:19:48 by plavaux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libft.a
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-SRC = 
+SRC = *.c
 
 # No Wildcards? Let's use a macro.
 OBJ = $(SRC:.c=.o)
