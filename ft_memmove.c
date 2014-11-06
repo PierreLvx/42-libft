@@ -11,7 +11,7 @@ void	*ft_memmove(void *dst, void *src, size_t len)
 	str_2 = src;
 	while (i < len && str_1[i] != '\0')
 	{
-		((char *)dst)[i] = ((char *)src)[i];
+		str_1[i] = str_2[i];
 		i++;
 	}
 	return (dst);
