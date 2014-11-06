@@ -6,14 +6,14 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 10:08:02 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/06 10:08:05 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/06 14:32:13 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
 void	*ft_memmove(void *dst, void *src, size_t len)
-{	
+{
 	char		*str_1;
 	char		*str_2;
 	size_t		i;
