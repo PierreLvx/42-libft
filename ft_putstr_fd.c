@@ -6,10 +6,11 @@
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 15:11:31 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/03 15:48:46 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/07 19:30:51 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include "libft.h"
 
 /*
@@ -18,12 +19,6 @@
 
 void	ft_putstr_fd(char const *s, int fd)
 {
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		ft_putchar_fd(s[i], fd);
-		i++;
-	}
+	if (s != NULL)
+		write(fd, s, ft_strlen(s));
 }
