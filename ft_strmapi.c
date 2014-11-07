@@ -24,17 +24,21 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	i;
 	char			*fresh;
 
-	len = ft_strlen(s);
-	i = 0;
-	fresh = (char *)malloc(sizeof(char) * (len + 1));
-	if (fresh)
+	if (s && f)
 	{
-		while (i < len)
+		len = ft_strlen(s);
+		i = 0;
+		fresh = (char *)malloc(sizeof(char) * (len + 1));
+		if (fresh)
 		{
-			fresh[i] = f(i, s[i]);
-			i++;
+			while (i < len)
+			{
+				fresh[i] = f(i, s[i]);
+				i++;
+			}
+			fresh[i] = '\0';
 		}
-		fresh[i] = '\0';
+		return (fresh);
 	}
-	return (fresh);
+	return (NULL);
 }

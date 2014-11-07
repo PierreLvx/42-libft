@@ -25,7 +25,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char	*fresh;
 
 	fresh = NULL;
-	if (s)
+	if (s && f)
 	{
 		len = ft_strlen(s);
 		i = 0;
