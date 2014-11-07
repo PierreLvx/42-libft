@@ -6,7 +6,7 @@
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:40:29 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/07 19:34:21 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/07 20:13:23 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_islower(int c);
 int		ft_isprint(int c);
+int		ft_isspace(int c);
 int		ft_isupper(int c);
 void	*ft_memalloc(size_t size);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n);

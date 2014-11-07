@@ -6,9 +6,11 @@
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:56:54 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/03 14:37:56 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/07 20:12:25 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 ** Discards any whitespace characters until first non-whitespace character is
@@ -23,9 +25,7 @@ int	ft_atoi(const char *str)
 
 	value = 0;
 	sign = 1;
-	while (*str == ' ' || *str == '\t'
-			|| *str == '\n' || *str == '\r'
-			|| *str == '\v' || *str == '\f')
+	while (ft_isspace(*str))
 		str++;
 	if (*str == '+' || *str == '-')
 	{
