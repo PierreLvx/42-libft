@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmap.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/07 13:40:17 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/07 16:24:25 by plavaux          ###   ########.fr       */
+/*   Created: 2014/11/07 13:40:50 by plavaux           #+#    #+#             */
+/*   Updated: 2014/11/07 16:23:12 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,31 +14,27 @@
 #include "libft.h"
 
 /*
-** Apply the function f to each character of the parameter string,
-** create a new string with the result, and return it.
+** Apply the function f to each character of the parameter string, while
+** precising its index, create a new string from the result and return it.
 */
 
-char	*ft_strmap(char const *s, char (*f)(char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	len;
-	size_t	i;
-	char	*fresh;
+	size_t			len;
+	unsigned int	i;
+	char			*fresh;
 
-	fresh = NULL;
-	if (s)
+	len = ft_strlen(s);
+	i = 0;
+	fresh = (char *)malloc(sizeof(char) * (len + 1));
+	if (fresh)
 	{
-		len = ft_strlen(s);
-		i = 0;
-		fresh = (char *)malloc(sizeof(char) * (len + 1));
-		if (fresh)
+		while (i < len)
 		{
-			while (i < len)
-			{
-				fresh[i] = f(s[i]);
-				i++;
-			}
-			fresh[i] = '\0';
+			fresh[i] = f(i, s[i]);
+			i++;
 		}
+		fresh[i] = '\0';
 	}
 	return (fresh);
 }
