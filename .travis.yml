@@ -1,6 +1,9 @@
 language: c
 
+install: cppcheck
+
 compiler: gcc
 
 script:
+    - "cppcheck --enable=warning,performance,portability,unusedFunction,missingInclude *.c -q --std=c89 -v"
     - make
