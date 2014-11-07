@@ -6,7 +6,7 @@
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:40:29 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/06 14:35:16 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/07 13:50:03 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,11 @@ int		ft_isdigit(int c);
 int		ft_islower(int c);
 int		ft_isprint(int c);
 int		ft_isupper(int c);
+void	*ft_memalloc(size_t size);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	ft_memdel(void **ap);
 void	*ft_memmove(void *dst, void *src, size_t len);
 void	*ft_memset(void *b, int c, size_t len);
@@ -38,7 +40,7 @@ void	ft_putnbr(int n);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr(char const *s);
 void	ft_putstr_fd(char const *s, int fd);
-char	*ft_strcat(char *s1, char *s2);
+char	*ft_strcat(char *s1, const char *s2);
 void	ft_strclr(char *s);
 int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strcpy(char *dst, const char *src);

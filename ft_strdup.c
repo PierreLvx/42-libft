@@ -6,7 +6,7 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/09/05 10:39:22 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/06 17:55:50 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/07 14:28:35 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 char	*ft_strdup(const char *s1)
 {
-	int		len;
+	size_t	len;
 	char	*str;
 
 	if (s1 == NULL)

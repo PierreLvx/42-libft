@@ -6,7 +6,7 @@
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 16:14:14 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/04 16:21:58 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/07 14:27:56 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 ** The string s1 must have sufficient space to hold the result.
 */
 
-char *ft_strcat(char *s1, char *s2)
+char *ft_strcat(char *s1, const char *s2)
 {
-	int len;
-	int i;
+	size_t	len;
+	int		i;
 
 	len = ft_strlen(s1);
 	i = 0;

@@ -14,6 +14,10 @@
 #include <stdlib.h>
 #include "libft.h"
 
+/*
+** Casting to void * is redundant
+*/
+
 void	*ft_memalloc(size_t size)
 {
 	void	*mem;
@@ -21,7 +25,7 @@ void	*ft_memalloc(size_t size)
 	mem = NULL;
 	if (size)
 	{
-		mem = (void *)malloc(size);
+		mem = malloc(size);
 		if (mem)
 			ft_bzero(mem, size);
 	}
