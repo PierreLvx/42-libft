@@ -6,25 +6,25 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 10:08:02 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/06 14:32:13 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/08 13:48:24 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, void *src, size_t len)
 {
-	char		*str_1;
-	char		*str_2;
-	size_t		i;
+	void*tmp;
 
-	i = 0;
-	str_1 = dst;
-	str_2 = src;
-	while (i < len && str_1[i] != '\0')
+	if (dst && src)
 	{
-		str_1[i] = str_2[i];
-		i++;
+		if ((tmp = (void*)malloc(len)) 	== NULL)
+			return (NULL);
+		ft_memcpy(tmp, src, len);
+		ft_memcpy(dst, tmp, len);
+		free(tmp);
 	}
 	return (dst);
 }
