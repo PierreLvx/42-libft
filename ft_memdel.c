@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 13:28:39 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/04 13:28:45 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/08 14:27:33 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 void	ft_memdel(void **ap)
 {
-	if (*ap != NULL)
+	if (ap && *ap)
 	{
 		free(*ap);
 		*ap = NULL;
