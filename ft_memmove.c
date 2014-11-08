@@ -6,7 +6,7 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 10:08:02 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/08 13:50:29 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/08 16:24:41 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	*ft_memmove(void *dst, void *src, size_t len)
 {
-	void*tmp;
+	void	*tmp;
 
 	if (dst && src)
 	{
