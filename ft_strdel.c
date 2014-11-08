@@ -6,18 +6,18 @@
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 13:29:00 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/04 13:29:06 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/08 13:59:29 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** Deallocates the string memory allocation pointed to by as.
-** If as is NULL, no operation is performed.
+** If NULL, no operation is performed.
 */
 
 void	ft_strdel(char **as)
 {
-	ft_memdel((void **)as);
+	if (as && *as)
+		ft_memdel((void **)as);
 }
