@@ -9,9 +9,9 @@ libft
 Foreword
 ---
 
-This is a programming assignment for first year students at the 42.
+This is a programming assignment for first year students at 42.
 
-If you are browsing this repo, chances are you're a 42 student yourself, and working on your lib. If so, don't be foolish: never ever copy code that isn't yours, all the more so if you don't understand it.
+If you are browsing this repo, chances are you're a 42 student yourself, and working on your lib. If so, use your best judgement.
 
 Contributing
 ---
