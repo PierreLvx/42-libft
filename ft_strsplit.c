@@ -6,7 +6,7 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/14 10:28:04 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/14 11:54:25 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/14 14:05:43 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ char		**ft_strsplit(char const *s, char c)
 	char	**result;
 
 	words = count_words((char *)s, c);
+	if (!s || !c)
+		return (NULL);
 	result = (char **)malloc(sizeof(char *) * (count_words((char *)s, c) + 1));
 	start = (char *)s;
 	while (*s)
