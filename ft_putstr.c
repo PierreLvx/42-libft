@@ -6,7 +6,7 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 15:11:31 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/14 11:54:30 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/14 17:40:00 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@
 
 void	ft_putstr(char const *s)
 {
-	if (s != NULL)
+	if (s)
 		write(1, s, ft_strlen(s));
 }
