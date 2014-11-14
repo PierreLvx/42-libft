@@ -6,24 +6,22 @@
 /*   By: plavaux <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 15:49:49 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/03 15:54:51 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/14 11:32:22 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-** Prints the integer number n to standard output.
-*/
-
 void ft_putnbr(int n)
 {
-	if (n < 0)
+	if (n == -2147483648)
+		ft_putstr("-2147483648");
+	if (n < 0 && n > -2147483648)
 	{
 		ft_putchar('-');
 		n *= -1;
 	}
-	if (n < 10)
+	if (n < 10 && n > -2147483648)
 		ft_putchar(n + 48);
 	else if (n >= 10)
 	{
