@@ -6,7 +6,7 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/14 10:28:04 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/14 14:05:43 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/15 16:34:46 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,7 @@ static int	count_words(char *s, char c)
 
 	while (*s && *s == c)
 		++s;
-	if (*s)
-		words = 1;
-	else
-		words = 0;
+	words = (*s) ? 1 : 0;
 	while (*s)
 	{
 		if (*s == c && s[1] && s[1] != c)

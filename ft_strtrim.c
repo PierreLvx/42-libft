@@ -6,7 +6,7 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 15:40:19 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/14 11:54:24 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/15 16:30:19 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,7 @@ size_t		blank_cnt(char const *s, int start, int side)
 	while (ft_isblank(s[start]))
 	{
 		count++;
-		if (side > 0)
-			start++;
-		else
-			start--;
+		(side > 0) ? start++ : start--;
 	}
 	return (count);
 }
