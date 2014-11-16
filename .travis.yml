@@ -2,5 +2,10 @@ language: c
 
 compiler: gcc
 
+before_install:
+    - sudo apt-get update qq
+    - apt-get install -y cppcheck
+
 script:
+    - cppcheck --enable=warning,style,performance,portability,missingInclude --std=c89 *.c -q
     - make
