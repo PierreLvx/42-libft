@@ -13,6 +13,8 @@ This is a programming assignment for first year students at 42.
 
 If you are browsing this repo, chances are you're a 42 student yourself, and working on your lib. If so, use your best judgement.
 
+A minimal Travis CI setup is included. It'll only check for successful builds, and doesn't ensure proper operation of the library like unit tests would.
+
 Contributing
 ---
 
