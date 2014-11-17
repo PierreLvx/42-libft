@@ -1,8 +1,7 @@
 libft
 ===
 
-[![Build Status](https://magnum.travis-ci.com/PierreLvx/libft.svg?token=7wgBD5aA9jP9JhhCSDw5)](https://magnum.travis-ci.com/PierreLvx/libft)
-
+[![Build Status](https://travis-ci.org/PierreLvx/libft.svg)](https://travis-ci.org/PierreLvx/libft)
 
 **A library recreating standard libc functions, with a few extra niceties.**
 
