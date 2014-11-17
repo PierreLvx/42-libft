@@ -6,7 +6,7 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 20:04:22 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/14 18:15:39 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/17 15:53:15 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int		ft_isspace(int c)
 {
-	if (ft_isblank(c) || c == '\r' || c == '\v' || c == '\f')
-		return (1);
-	return (0);
+	return (ft_isblank(c) || c == '\r' || c == '\v' || c == '\f');
 }
