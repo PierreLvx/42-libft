@@ -6,7 +6,7 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:40:29 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/14 11:54:22 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/11/18 10:43:43 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int		ft_isascii(int c);
 int		ft_isblank(int c);
 int		ft_isdigit(int c);
 int		ft_islower(int c);
+int		ft_isnum(char c);
 int		ft_isprint(int c);
 int		ft_isspace(int c);
 int		ft_isupper(int c);
@@ -51,11 +52,17 @@ char	*ft_strcpy(char *dst, const char *src);
 void	ft_strdel(char **as);
 char	*ft_strdup(const char *s1);
 int		ft_strequ(char const *s1, char const *s2);
+int		ft_strisalpha(char *str);
+int		ft_strislower(char *str);
+int		ft_strisnum(char *str);
+int		ft_strisprint(char *str);
+int		ft_strisupper(char *str);
 void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
+char	*ft_strlowcase(char *str);
 char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strncat(char *s1, const char *s2, size_t n);
@@ -69,6 +76,8 @@ char	*ft_strstr(const char *s1, const char *s2);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	**ft_strsplit(char const *s, char c);
 char	*ft_strtrim(char const *s);
+char	*ft_strupcase(char *str);
+void	ft_swap(int *a, int *b);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 #endif
