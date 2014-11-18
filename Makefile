@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: plavaux <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/05 11:13:35 by plavaux           #+#    #+#              #
-#    Updated: 2014/11/14 11:16:55 by plavaux          ###   ########.fr        #
+#    Updated: 2014/11/18 11:20:58 by plavaux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ SRC =	ft_atoi.c \
 		ft_isblank.c \
 		ft_isdigit.c \
 		ft_islower.c \
+		ft_isnum.c \
 		ft_isprint.c \
 		ft_isspace.c \
 		ft_isupper.c \
@@ -50,11 +51,17 @@ SRC =	ft_atoi.c \
 		ft_strdel.c \
 		ft_strdup.c \
 		ft_strequ.c \
+		ft_strisalpha.c \
+		ft_strislower.c \
+		ft_strisprint.c \
+		ft_strisupper.c \
 		ft_striter.c \
 		ft_striteri.c \
 		ft_strjoin.c \
 		ft_strlcat.c \
 		ft_strlen.c \
+		ft_strlowcase.c \
+		ft_strupcase.c \
 		ft_strmap.c \
 		ft_strmapi.c \
 		ft_strncat.c \
