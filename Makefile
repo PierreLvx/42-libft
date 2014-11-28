@@ -6,7 +6,7 @@
 #    By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/05 11:13:35 by plavaux           #+#    #+#              #
-#    Updated: 2014/11/18 11:20:58 by plavaux          ###   ########.fr        #
+#    Updated: 2014/11/27 11:11:12 by plavaux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,6 +67,7 @@ SRC =	ft_atoi.c \
 		ft_strncat.c \
 		ft_strncmp.c \
 		ft_strncpy.c \
+		ft_strndup.c \
 		ft_strnequ.c \
 		ft_strnew.c \
 		ft_strnstr.c \
