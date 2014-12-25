@@ -6,45 +6,37 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 15:40:19 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/17 15:58:37 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/12/25 23:00:09 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-size_t		blank_cnt(char const *s, int start, int side)
+static int		ft_isblank_custom(int c)
 {
-	size_t		count;
-
-	count = 0;
-	while (ft_isblank(s[start]))
-	{
-		count++;
-		(side > 0) ? start++ : start--;
-	}
-	return (count);
+		return ((c == ' ' || c == '\t' || c == '\n') ? 1 : 0);
 }
 
-char		*ft_strtrim(char const *s)
+char			*ft_strtrim(char const *s)
 {
 	char		*fresh;
-	size_t		start;
-	size_t		len;
-	size_t		index;
+	int			index_end;
+	size_t		i;
 
 	if (!s)
 		return (NULL);
-	if (blank_cnt(s, 0, 1) == ft_strlen(s))
-		return (ft_strnew(0));
-	start = blank_cnt(s, 0, 1);
-	len = ft_strlen(s) - blank_cnt(s, ft_strlen(s) - 1, -1) - start;
-	fresh = ft_strnew(len + 1);
-	index = 0;
-	if (!fresh)
-		return (fresh);
-	while (len--)
-		fresh[index++] = s[start++];
-	fresh[index++] = '\0';
+	index_end = 0;
+	i = 0;
+	fresh = ft_strnew(ft_strlen(s));
+	while (i < ft_strlen(s))
+	{
+		if (!index_end && ft_isblank_custom(s[i]))
+			i++;
+		else
+			fresh[index_end++] = s[i++];
+	}
+	while (ft_isblank_custom(fresh[--index_end]))
+		fresh[index_end] = '\0';
 	return (fresh);
 }
