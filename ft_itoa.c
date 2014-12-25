@@ -30,10 +30,8 @@ static int	st_intlen(int value)
 static char	*st_intmax(void)
 {
 	char	*buf;
-	int		max;
 
-	max = -2147483648;
-	buf = ft_strnew(st_intlen(max) + 1);
+	buf = ft_strnew(st_intlen(-2147483648) + 1);
 	ft_strcpy(buf, "-2147483648");
 	return (buf);
 }
