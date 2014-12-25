@@ -6,7 +6,7 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 13:40:50 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/14 11:54:27 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/12/25 18:40:32 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,25 +20,17 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t			len;
 	unsigned int	i;
 	char			*fresh;
 
-	if (s && f)
+	if (!s || !f)
+		return (NULL);
+	fresh = ft_strnew(ft_strlen(s));
+	i = 0;
+	while (s[i])
 	{
-		len = ft_strlen(s);
-		i = 0;
-		fresh = (char *)malloc(sizeof(char) * (len + 1));
-		if (fresh)
-		{
-			while (i < len)
-			{
-				fresh[i] = f(i, s[i]);
-				i++;
-			}
-			fresh[i] = '\0';
-		}
-		return (fresh);
+		fresh[i] = (*f)(i, s[i]);
+		i++;
 	}
-	return (NULL);
+	return (fresh);
 }
