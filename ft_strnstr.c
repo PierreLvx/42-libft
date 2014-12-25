@@ -6,7 +6,7 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 13:41:23 by plavaux           #+#    #+#             */
-/*   Updated: 2014/11/14 11:54:25 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/12/25 17:46:01 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,20 @@
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
-	size_t	i;
-	size_t	y;
+	char	*cpy;
+	char	*buf;
+	size_t	length;
 
-	if (ft_strlen(s2) == 0)
+	buf = (char *)(s1 + n);
+	length = ft_strlen(s2);
+	cpy = (char *)s1;
+	if (!s1 || !s2 || !length)
 		return ((char *)s1);
-	i = 0;
-	while (s1[i] != '\0' && i < n)
+	while ((cpy = ft_strchr(cpy, *s2)) && cpy <= buf)
 	{
-		if (s1[i] == s2[0])
-		{
-			y = 1;
-			while (s2[y] == s1[i + y] && (y + i) < n)
-				y++;
-			if (s2[y] == '\0')
-				return (&(((char *)s1)[i]));
-		}
-		i++;
+		if ((cpy + length <= buf) && !ft_strncmp(cpy, s2, length))
+			return (cpy);
+		cpy++;
 	}
 	return (NULL);
 }
