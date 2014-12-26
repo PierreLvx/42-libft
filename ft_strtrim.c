@@ -6,23 +6,23 @@
 /*   By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 15:40:19 by plavaux           #+#    #+#             */
-/*   Updated: 2014/12/25 23:00:09 by plavaux          ###   ########.fr       */
+/*   Updated: 2014/12/26 16:40:53 by plavaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-static int		ft_isblank_custom(int c)
+static int	ft_isblank_custom(int c)
 {
-		return ((c == ' ' || c == '\t' || c == '\n') ? 1 : 0);
+	return ((c == ' ' || c == '\t' || c == '\n') ? 1 : 0);
 }
 
-char			*ft_strtrim(char const *s)
+char		*ft_strtrim(char const *s)
 {
-	char		*fresh;
-	int			index_end;
-	size_t		i;
+	char	*fresh;
+	int		index_end;
+	size_t	i;
 
 	if (!s)
 		return (NULL);
