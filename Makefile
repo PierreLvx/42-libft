@@ -6,43 +6,20 @@
 #    By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/05 11:13:35 by plavaux           #+#    #+#              #
-#    Updated: 2014/12/25 17:59:09 by plavaux          ###   ########.fr        #
+#    Updated: 2015/01/15 16:08:22 by plavaux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -ansi -pedantic -Wall -Wextra -Werror
 SRC =	ft_atoi.c \
 		ft_bzero.c \
-		ft_isalnum.c \
-		ft_isalpha.c \
-		ft_isascii.c \
-		ft_isblank.c \
-		ft_isdigit.c \
-		ft_islower.c \
-		ft_isnum.c \
-		ft_isprint.c \
-		ft_isspace.c \
-		ft_isupper.c \
+		ft_is{alnum,alpha,ascii,blank,digit,lower,num,print,space,upper}.c \
 		ft_itoa.c \
-		ft_memalloc.c \
-		ft_memccpy.c \
-		ft_memchr.c \
-		ft_memcmp.c \
-		ft_memcpy.c \
-		ft_memdel.c \
-		ft_memmove.c \
-		ft_memset.c \
-		ft_putchar.c \
-		ft_putchar_fd.c \
-		ft_putendl.c \
-		ft_putendl_fd.c \
-		ft_putnbr.c \
-		ft_putnbr_fd.c \
-		ft_putstr.c \
-		ft_putstr_fd.c \
+		ft_mem{alloc,ccpy,chr,cmp,cpy,del,move,set}.c \
+		ft_put{char,char_fd,endl,endl_fd,nbr,nbr_fd,str,str_fd}.c \
 		ft_strcat.c \
 		ft_strchr.c \
 		ft_strclr.c \
@@ -51,19 +28,14 @@ SRC =	ft_atoi.c \
 		ft_strdel.c \
 		ft_strdup.c \
 		ft_strequ.c \
-		ft_strisalpha.c \
-		ft_strislower.c \
-		ft_strisprint.c \
-		ft_strisupper.c \
-		ft_striter.c \
-		ft_striteri.c \
+		ft_stris{alpha,lower,print,upper}.c \
+		ft_str{iter,iteri}.c \
 		ft_strjoin.c \
 		ft_strlcat.c \
 		ft_strlen.c \
 		ft_strlowcase.c \
 		ft_strupcase.c \
-		ft_strmap.c \
-		ft_strmapi.c \
+		ft_str{map,mapi}.c \
 		ft_strncat.c \
 		ft_strncmp.c \
 		ft_strncpy.c \
@@ -76,14 +48,8 @@ SRC =	ft_atoi.c \
 		ft_strstr.c \
 		ft_strsub.c \
 		ft_strtrim.c \
-		ft_tolower.c \
-		ft_toupper.c \
-		ft_lstadd.c \
-		ft_lstdel.c \
-		ft_lstdelone.c \
-		ft_lstiter.c \
-		ft_lstmap.c \
-		ft_lstnew.c
+		ft_to{lower,upper}.c \
+		ft_lst{add,del,delone,iter,map,new}.c
 
 OBJ = $(SRC:.c=.o)
 
