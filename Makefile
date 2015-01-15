@@ -6,7 +6,7 @@
 #    By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/05 11:13:35 by plavaux           #+#    #+#              #
-#    Updated: 2015/01/15 16:31:18 by plavaux          ###   ########.fr        #
+#    Updated: 2015/01/15 18:05:42 by plavaux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,6 @@ CC = cc
 CFLAGS = -ansi -pedantic -Wall -Wextra -Werror
 SRC =	ft_atoi.c \
 		ft_bzero.c \
-		ft_is{alnum,alpha,ascii,blank,digit,lower,num,print,space,upper}.c \
 		ft_itoa.c \
 		ft_mem{alloc,ccpy,chr,cmp,cpy,del,move,set}.c \
 		ft_put{char,char_fd,endl,endl_fd,nbr,nbr_fd,str,str_fd}.c \
@@ -56,7 +55,8 @@ SRC =	ft_atoi.c \
 		ft_strsub.c \
 		ft_strtrim.c \
 		ft_to{lower,upper}.c \
-		ft_lst{add,del,delone,iter,map,new}.c
+		ft_lst{add,del,delone,iter,map,new}.c \
+		ft_is{alnum,alpha,ascii,blank,digit,lower,num,prime,print,space,upper}.c
 
 OBJ = $(SRC:.c=.o)
 
