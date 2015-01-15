@@ -6,11 +6,13 @@
 #    By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/05 11:13:35 by plavaux           #+#    #+#              #
-#    Updated: 2015/01/15 16:08:22 by plavaux          ###   ########.fr        #
+#    Updated: 2015/01/15 16:18:49 by plavaux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+
+SHELL = /bin/zsh
 
 CC = cc
 CFLAGS = -ansi -pedantic -Wall -Wextra -Werror
