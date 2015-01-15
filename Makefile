@@ -6,13 +6,18 @@
 #    By: plavaux <plavaux@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/05 11:13:35 by plavaux           #+#    #+#              #
-#    Updated: 2015/01/15 16:21:59 by plavaux          ###   ########.fr        #
+#    Updated: 2015/01/15 16:31:18 by plavaux          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SHELL = /bin/bash
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
+	SHELL = /bin/zsh
+else
+	SHELL = /bin/bash
+endif
 
 CC = cc
 CFLAGS = -ansi -pedantic -Wall -Wextra -Werror
